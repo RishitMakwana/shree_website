@@ -1,0 +1,87 @@
+@import url(header+footer.css);
+
+/*about*/
+/* .mi{  
+  background-image: url('../../assets/images/about_2.jpg');
+  justify-content: center;
+  z-index: 2; 
+  font-size: 4rem;  
+  padding: 3rem; */
+/* } */
+.header{    
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  perspective: 100rem;    
+}
+
+.mrinfo{    
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  height: auto; 
+  color: black ;         
+}
+
+.mi{
+  margin: 0;
+  font-size: 4.5rem;  
+  padding: 3rem; 
+  width: 100%;    
+  height: auto;    
+  position: relative;      
+  z-index: 0;
+}
+
+.mi p{
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.mi::before{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url(assets/images/about_2.jpg) no-repeat; 
+  z-index: -1;
+  background-size: cover;  
+  opacity: 0.5;  
+}   
+
+.about-heading h2{
+  margin: 0 !important;
+  font-size: 8rem;
+  padding: 2rem;
+  display: block;
+  text-align: center;  
+}
+
+@media (max-width:1164px){
+  .mrinfo{
+      margin-left: 2rem;
+      margin-right: 2rem;
+  }
+  
+}
+@media (max-width:944px){
+  .mrinfo{
+      margin: 1rem;      
+  }
+}
+
+@media (max-width:500px){
+  .mi p{
+    font-size: 1rem;
+  }
+  .about-heading h2{    
+    font-size: 4rem;     
+  }
+  .mi p{
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+}

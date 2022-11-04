@@ -1,0 +1,52 @@
+@import url(header+footer.css);  
+
+.header{    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    perspective: 100rem;    
+  }
+
+.container{
+    margin-bottom:2rem;
+}
+.container .heading{
+    font-size: 5rem;
+    margin: 2rem 0;        
+    color: black;        
+    text-align: center;                
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.video-container .vid{
+    height: 20rem;
+    width: 35rem;
+    margin: 1rem;
+    box-shadow: 0,0.5rem,1rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.video-container .vid video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0,0.5rem,1rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.video-container .vid video:hover
+{
+    transition: .2s linear;
+    transform:scale(1.1)
+}
+.videos{
+    margin: 2rem;
+}

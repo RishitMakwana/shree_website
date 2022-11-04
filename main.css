@@ -1,0 +1,251 @@
+  @import url(header+footer.css);  
+  /* Section - 3 */
+    
+  .serv{
+    margin: 0;
+    width: 100%;    
+    height: 60rem;    
+    background-color: rgba(0,0,0,0.9);  
+    position: relative;      
+    z-index: 0;
+  }
+  
+  .serv::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(assets/images/services.jpg) no-repeat;
+    z-index: -1;
+    background-size: cover;  
+    opacity: 0.2;  
+  }   
+  
+  .serv h1{
+    display: block;    
+    color: #fff;
+    font-size: 4.5rem;      
+    text-align: center;
+  }
+  .serv .fb{
+    color: #fff;
+    height: auto;
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;    
+    flex-direction: row;
+    align-items:stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .serv .box{         
+    z-index: 1;
+    font-size: 2rem;
+    flex: 1 1 20rem;
+  }
+  
+  .serv .box .photo{
+    text-align: center;
+  }
+  
+  .serv .box h2{
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .serv .box p{
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .serv .box img{
+    height: 22.5rem;
+    width: 22.5rem;
+    border-radius: 50%;
+    border: whitesmoke solid;
+  }
+  
+  @media (max-width:1164px) {
+    .serv{
+        height: auto;
+        width: auto;
+    }
+  
+  }
+
+  @media (max-width:450px) {
+    .serv{
+        overflow-x: hidden;
+        height: auto;
+        width: auto;
+    }
+  
+  }
+  
+  /* Gallery Section */
+  .container{margin-bottom: 2rem;}
+  
+  .gallery{
+    height: auto;
+  }
+
+  .gallery h1{ 
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .gallery h4{
+    text-align: center;
+  }
+  
+  .glryflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  @media (max-width:481px) {
+   .glryflex img,iframe{
+     width: auto;
+     max-width: 30rem;
+     height: 25rem;
+   }
+  }
+  .pglry,.vglry{
+    display: flex;
+    flex-direction: column;
+  }
+  .pglry a{
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  .vglry a{
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;    
+  }
+  .glryflex h4{
+    font-size: 3rem;
+  }
+  .map-responsive{
+
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+  /* Bookevent Section */   
+  
+  .bookevent{
+    height: auto;
+    width: 100%;    
+    background-color: whitesmoke;
+  }
+  
+  .bookevent h2{
+    margin: auto;
+    display: block;
+    padding-left:2rem;
+    padding-right: 2rem;    
+    text-align: center; 
+    font-size: 4rem;
+    padding-top: 2rem; 
+  }
+  
+  @media( max-width:500px) {
+    .bookevent h2{
+      font-size: 3rem;
+      padding-top:1rem;
+    }
+  }
+  .pics{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    margin-top: 3.7rem; 
+    padding-bottom: 2rem;
+  }
+  
+  .pics h3{
+    display:block;
+    text-align: center;
+    font-size: 2rem;
+    padding-top:0.2rem;
+  }
+  
+  .pics .pic{
+    height: 27rem;
+    width: 34rem;    
+    flex: 1 1 37rem;
+    margin: 1.5rem;
+  }
+  
+  .bookevent .btn{
+    height: 4.5rem;
+    width: 30rem;    
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: rgba(42, 131, 158, 0.8);    
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color: whitesmoke;
+  }
+  
+  @media(max-width:1400px){
+    .bookevent{height: auto;width: auto;}    
+  }
+
+  .responsive{
+    max-width: 100%;
+    height: auto;
+  }  
+  
+  @media(max-width:901){
+    .pics{
+        display: flex;
+        justify-content: space-around; 
+        flex-wrap: wrap;
+        margin-top: 2.7rem; 
+    }
+  }
+  @media(max-width:387px){
+    .pics .pic{      
+      width: 25rem;              
+    }    
+    .bookevent .btn{      
+      width: auto;         
+    }
+  }
+  @media(max-width:387px){
+    .pics .pic{      
+      width: 25rem;              
+    }
+  }
+    
+  /* Map section */
+  .map{
+    height: 45rem;
+    width: 100%;
+    background: url(assets/images/IMG-20170911-WA0029.jpg);
+  }
+  
